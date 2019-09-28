@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+            定义变量：
+                var  function
+            es6:
+                let const
+        */
+
+
+        // let num=10;//定义一个变量   num
+        // console.log(num);
+
+
+        // var num=10;
+
+        // function show(){
+        //     console.log('hello');
+        // }
+
+        // console.log(num);
+        // console.log(show);
+
+        //es5
+        // if(true){
+        //     var num=10;
+        // }else{
+        //     var a=20;//变量提升
+        // }
+
+        //es6
+        if (true) {
+            if (true) {
+                let num = 10; //此变量只在该代码块内有效
+                // console.log(num);
+            } else {
+                let a = 20; //变量提升
+            }
+            console.log(num);
+        }
+
+        // console.log(num);
+        // console.log(a);
+    </script>
+</body>
+
+</html>
