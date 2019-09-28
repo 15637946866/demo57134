@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>aaaa</li>
+        <li>aaaa</li>
+        <li>aaaa</li>
+        <li>aaaa</li>
+        <li>aaaa</li>
+    </ul>
+    <script>
+        /*
+            let和var的区别定义变量的特性：
+                1)let没有变量提升：先定义，再使用
+                2)let不能重复定义
+                3)let定义的变量不会作为window对象的属性
+        */
+
+        // var a=10;//es5 var定义的变量  会作为window对象的属性
+        // console.log(a);
+        // console.log(window.a);
+
+        // function show(){}
+
+        // console.log(window.show);
+
+        // let a = 20;
+        // console.log(a);
+        // console.log(window.a);
+
+        // var arr=[];
+        // for(let i=0;i<3;i++){
+        //     arr.push(function(){
+        //         console.log(i);
+        //     });
+        // }
+
+        // // console.log(arr);
+        // for(var j in arr){
+        //     arr[j]();
+        // }
+
+
+
+        var lis=document.getElementsByTagName('li');
+        for(let i=0;i<lis.length;i++){
+            lis[i].onclick=function(){
+                console.log(i);
+            };
+        }
+    </script>
+</body>
+
+</html>
